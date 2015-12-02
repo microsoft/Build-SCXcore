@@ -1,0 +1,12 @@
+[submodule "pal"]
+	path = pal
+	url = git@github.com:MSFTOSSMgmt/pal.git
+	branch = dev-git
+[submodule "opsmgr"]
+	path = opsmgr
+	url = git@github.com:MSFTOSSMgmt/SCXcore.git
+	branch = dev-git
+[submodule "omi"]
+	path = omi
+	url = git@github.com:MSFTOSSMgmt/omi.git
+	branch = dev-git
