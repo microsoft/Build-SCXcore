@@ -1,4 +1,4 @@
-# Operations Management Client (SCXcore)
+# Operations Management Client (Build-SCXcore)
 
 ## Table of Contents
 - [Glossary of Terms](#glossary-of-terms)
@@ -8,6 +8,7 @@
   - [Setting up a system to build a shell bundle](#setting-up-a-system-to-build-a-shell-bundle)
 - [Cloning the repository](#cloning-the-repository)
 - [Building the agent](#building-the-agent)
+- [Code of Conduct](#code-of-conduct)
 
 If you are an active contributor to the SCXcore project, you should
 [set up your system]
@@ -151,3 +152,12 @@ your system, in that order.
 Note that a shell bundle can install more than OMI and SCX on your
 system.  Depending on your system configuration, providers for Apache
 and MySQL may also be installed.
+
+### Code of Conduct
+
+This project has adopted the [Microsoft Open Source Code of Conduct]
+(https://opensource.microsoft.com/codeofconduct/).  For more
+information see the [Code of Conduct FAQ]
+(https://opensource.microsoft.com/codeofconduct/faq/) or contact
+[opencode@microsoft.com](mailto:opencode@microsoft.com) with any
+additional questions or comments.
