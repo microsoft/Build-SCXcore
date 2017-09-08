@@ -1,7 +1,7 @@
 [submodule "omi"]
 	path = omi
 	url = git@github.com:Microsoft/omi.git
-	branch = stable
+	branch = v1.4.0-0
 [submodule "pal"]
 	path = pal
 	url = git@github.com:Microsoft/pal.git
@@ -17,4 +17,4 @@
 [submodule "omi-kits"]
 	path = omi-kits
 	url = git@github.com:Microsoft/omi-kits.git
-       branch = master
+	branch = v1.4.0-0
