@@ -9,7 +9,7 @@
 [submodule "opsmgr"]
 	path = opsmgr
 	url = git@github.com:Microsoft/SCXcore.git
-	branch = master
+	branch = OPENSSL_1.1.0
 [submodule "opsmgr-kits"]
 	path = opsmgr-kits
 	url = git@github.com:Microsoft/SCXcore-osskits.git
