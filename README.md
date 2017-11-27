@@ -11,12 +11,9 @@
 - [Code of Conduct](#code-of-conduct)
 
 If you are an active contributor to the SCXcore project, you should
-[set up your system]
-(https://github.com/Microsoft/ostc-docs/blob/master/setup-git.md)
-and follow our [common workflow]
-(https://github.com/Microsoft/ostc-docs/blob/master/workflow-workflow.md).
-New to git? Read [guidelines for development]
-(https://github.com/Microsoft/ostc-docs/blob/master/setup-rules.md).
+[set up your system](https://github.com/Microsoft/ostc-docs/blob/master/setup-git.md)
+and follow our [common workflow](https://github.com/Microsoft/ostc-docs/blob/master/workflow-workflow.md).
+New to git? Read [guidelines for development](https://github.com/Microsoft/ostc-docs/blob/master/setup-rules.md).
 
 -----
 
@@ -42,8 +39,7 @@ was previously installed to "seed" the system), or
 
 2. As a shell bundle.
 
-Building a shell bundle is a superset of of setting up a system to
-build a local RPM, so we will cover that first.
+Building a shell bundle is a superset of setting up a system to build a local RPM, so we will cover that first.
 
 #### Sudoers configuration
 
@@ -51,10 +47,9 @@ build a local RPM, so we will cover that first.
 
 #### Dependencies to build a native package
 
-Note that it's very nice to be able to use the [updatedns]
-(https://github.com/jeffaco/msft-updatedns) project to use host names
+Note that it's very nice to be able to use the [updatedns](https://github.com/jeffaco/msft-updatedns) project to use host names
 rather than IP numbers in a Hyper-V environment. On CentOS systems,
-this requires the bind-utils package (updatedns requires the 'dig'
+this requires the bind-utils package (updatedns requires the `dig`
 program). The bind-utils package isn't otherwise necessary.
 
 - On CentOS 7.x
@@ -70,14 +65,14 @@ program). The bind-utils package isn't otherwise necessary.
 
  When building a machine for ULINUX builds (such as SuSE 10), we
  suggest using the O/S distribution CD to install the packages. It's
- not as easy, but that's the only way to guarentee that packages
+ not as easy, but that's the only way to guarantee that packages
  aren't updated such that generated binaries are not backwards
  compatible. (See notes on building a shell bundle, elsewhere in this
  document.) Note that ULinux builds are controlled via the configure
  script, discussed below.
 
- Also note that since you won't use 'yum', you must also handle the dependent
- packages manually (keep adding lines to the 'rpm install' command line until
+ Also note that since you won't use `yum`, you must also handle the dependent
+ packages manually (keep adding lines to the `rpm install` command line until
  all dependencies are satisfied).
 
  Similar methods would be utilized if building a Redhat system that is not
@@ -90,9 +85,7 @@ SuSE 10.0 for this), as binary images created with older Linux systems
 are generally upwards compatible when installed on newer Linux systems.
 
 A notable exception: We use the OpenSSL package, and we can't tell if
-we need OpenSSL v0.9.8 or OpenSSL v1.0.x. As a result, we have a [special
-process] (https://github.com/Microsoft/ostc-openssl/blob/master/README.md)
-to build both both versions of OpenSSL that we can link against.
+we need OpenSSL v0.9.8 or OpenSSL v1.0.x. As a result, we have a [special process](https://github.com/Microsoft/ostc-openssl/blob/master/README.md) to build both both versions of OpenSSL that we can link against.
 
 Once OpenSSL is set up, you need to configure omsagent to include the
 ```--enable-ulinux``` qualifier, like this:<br>```./configure --enable-ulinux``` 
@@ -100,9 +93,7 @@ Once OpenSSL is set up, you need to configure omsagent to include the
 ### Cloning the repository
 
 Note that there are several subprojects, and authentication is a hassle
-unless you set up an SSH key via your GitHub account. [Set up your machine]
-(https://github.com/Microsoft/ostc-docs/blob/master/setup-git.md)
-properly for a much easier workflow.
+unless you set up an SSH key via your GitHub account. [Set up your machine](https://github.com/Microsoft/ostc-docs/blob/master/setup-git.md) properly for a much easier workflow.
 
 To clone the repository to build SCXcore, issue the following command:
 
@@ -126,7 +117,7 @@ recommendations.
 
 ### Building the Agent
 
-From the bld-scxcore directory (created above from 'git clone', do the
+From the `bld-scxcore` directory (created above from `git clone`, do the
 following:
 
 ```
@@ -141,8 +132,8 @@ can use ```configure --help``` to see the options available.
 
 When the build completes, you should have a native package that you
 can install on your system. The native package should be in a
-subdirectory off of bld-scxcore/opsmgr/intermediate (the directory
-name varies based on debug vs.  release builds).
+subdirectory off of `bld-scxcore/opsmgr/intermediate` (the directory
+name varies based on debug vs. release builds).
 
 As mentioned above, this form of build requires a shell bundle to be
 installed to "seed" your system with other required dependencies.
@@ -150,14 +141,12 @@ Alternatively, you can simply install the OMI and SCX packages for
 your system, in that order.
 
 Note that a shell bundle can install more than OMI and SCX on your
-system.  Depending on your system configuration, providers for Apache
+system. Depending on your system configuration, providers for Apache
 and MySQL may also be installed.
 
 ### Code of Conduct
 
-This project has adopted the [Microsoft Open Source Code of Conduct]
-(https://opensource.microsoft.com/codeofconduct/).  For more
-information see the [Code of Conduct FAQ]
-(https://opensource.microsoft.com/codeofconduct/faq/) or contact
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).  For more
+information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact
 [opencode@microsoft.com](mailto:opencode@microsoft.com) with any
 additional questions or comments.
