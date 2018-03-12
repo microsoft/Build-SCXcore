@@ -23,7 +23,7 @@ A short glossary might be helpful if this project is new to you:
 
 Term | Meaning
 ---- | -------
-SCX | This is a historical term (System Center X-Plat (Cross Platform)), when SCX was the only product of it's type. Now there are many different providers for many different purposes, and SCX is just one provider.
+SCX | This is a historical term (System Center X-Plat (Cross Platform)), when SCX was the only product of its type. Now there are many different providers for many different purposes, and SCX is just one provider.
 Shell Bundle | A "shell bundle" is a distribution mechanism for the SCX agent. A shell bundle is a shell script that has, as part of it, .RPM and .DEB native package files for OMI and SCX itself. The shell bundle determines what has to be installed based on system configuration and installs the appropriate packages.<br><br>Note that the SCX shell bundle contains other shell bundles to install other packages as well (Apache and MySQL, for example). Due to this, we consider the SCX shell bundle to be a "mega-bundle".
 ULinux | A "Universal Linux" build is a type of build that will install and run on any Linux system that we support. We have two universal builds for Linux: One for 32-bit systems, and one for 64-bit systems.
 
@@ -85,7 +85,7 @@ SuSE 10.0 for this), as binary images created with older Linux systems
 are generally upwards compatible when installed on newer Linux systems.
 
 A notable exception: We use the OpenSSL package, and we can't tell if
-we need OpenSSL v0.9.8 or OpenSSL v1.0.x. As a result, we have a [special process](https://github.com/Microsoft/ostc-openssl/blob/master/README.md) to build both both versions of OpenSSL that we can link against.
+we need OpenSSL v0.9.8 or OpenSSL v1.0.x. As a result, we have a [special process](https://github.com/Microsoft/ostc-openssl/blob/master/README.md) to build both versions of OpenSSL that we can link against.
 
 Once OpenSSL is set up, you need to configure omsagent to include the
 ```--enable-ulinux``` qualifier, like this:<br>```./configure --enable-ulinux``` 
