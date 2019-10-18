@@ -1,6 +1,6 @@
 # Operations Management Client (Build-SCXcore)
 
-## Table of Contents
+##### Table of Contents
 - [Glossary of Terms](#glossary-of-terms)
 - [Setting up a machine to build SCX](#setting-up-a-machine-to-build-scx)
   - [Sudoers configuration](#sudoers-configuration)
