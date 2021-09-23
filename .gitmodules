@@ -17,4 +17,4 @@
 [submodule "omi-kits"]
 	path = omi-kits
 	url = git@github.com:Microsoft/omi-kits.git
-       branch = master
+       branch = internal
