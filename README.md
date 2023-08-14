@@ -117,7 +117,7 @@ recommendations.
 
 ### Building the Agent
 
-From the `bld-scxcore` directory (created above from `git clone`, do the
+From the `bld-scxcore` directory (created above from `git clone`), do the
 following:
 
 ```
